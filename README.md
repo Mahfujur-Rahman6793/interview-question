@@ -65,7 +65,7 @@ Real-Time Facades in Laravel allow you to treat any class as a facade by simply 
 ### Q-15. Facades vs. Helper Functions
 | Feature               | Facade                              | Helper Function                       |
 |----------------------|--------------------------------------|----------------------------------------|
-| Access Style          | Static class (behind the scenes uses instances) | Global function                      |
+| Access Style          | A facade in Laravel is a class that provides a "static" interface to classes that are available in the service container. | A helper function is a global function that performs a specific task or returns a value. They are simpler and more procedural.                      |
 | Testing              | Easy to mock with `shouldReceive`   | Harder to mock                         |
 | Extendable           | Yes, via service container           | Less flexible                          |
 | Use Case             | Core services, more complex logic    | Quick tasks, utilities                 |
