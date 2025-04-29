@@ -59,6 +59,16 @@ A controller is an essential component in the Model-View-Controller (MVC) archit
 ➡️ **Controller** = better for big apps  
 ➡️ **Closure** = quick for small tasks
 
+### Q-14. What Are Real-Time Facades in Laravel?
+Real-Time Facades in Laravel allow you to treat any class as a facade by simply importing it with the Facades\ namespace prefix. This enables you to call methods using a static-like syntax while still using the service container behind the scenes. It's especially useful for writing cleaner code and making unit testing easier, as real-time facades can be mocked. You don’t need to manually create traditional facade classes, saving time and effort.
 
+### Q-15. Facades vs. Helper Functions
+| Feature               | Facade                              | Helper Function                       |
+|----------------------|--------------------------------------|----------------------------------------|
+| Access Style          | Static class (behind the scenes uses instances) | Global function                      |
+| Testing              | Easy to mock with `shouldReceive`   | Harder to mock                         |
+| Extendable           | Yes, via service container           | Less flexible                          |
+| Use Case             | Core services, more complex logic    | Quick tasks, utilities                 |
+| Namespace Required   | Yes (use statement)                  | No (global scope)                      |
 
 
